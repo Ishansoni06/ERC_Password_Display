@@ -115,8 +115,3 @@ ERC_Password_Display/
 │   └── LED_matrix_display.ino  
 └── README.md
 
-## Team Members
-
-- Ishan Nitin Soni – Encoding & RS logic
-- [Add additional team members]
-- [Add university or institution name]
