@@ -1,8 +1,7 @@
 # ERC 2025 – Challenge 2: Secure Data Transmission
 ## Subtask 2: Password Display Using LED Matrix
 **Team:** CRISS Robotics  
-**University:** [Your University Name]  
-**Challenge Type:** Remote  
+**University:** BITS PILANI , PILANI CAMPUS   
 **Subtask ID:** Challenge 2 – Subtask 2
 
 ## Problem Statement
@@ -14,9 +13,7 @@ The goal of this subtask is to display a 100-character password on a pair of RGB
 
 Teams must implement:
 - An encoding strategy for the password
-- A visual display on LED matrices using a 2-bit-per-LED encoding scheme (4 distinct states/colors)
 - A decoder system using a camera and image processing (e.g., OpenCV)
-- An error-correction method capable of recovering the original password in case of visual distortion or noise
 
 ## Ideas Discussed
 
@@ -30,7 +27,7 @@ Teams must implement:
    - Apply Reed–Solomon (RS) codes to protect against noise.
    - Enable recovery from up to 26 bytes of errors.
 4. Display Layout:
-   - Use two 8x8 RGB LED matrices.
+   - Use two 16X16 RGB LED matrices.
    - 2 bits per LED → 512 LEDs → 1024 bits = 128 bytes.
 5. Computer Vision Decoder:
    - Use OpenCV to decode the matrix from an image and extract the original password.
@@ -39,7 +36,7 @@ Teams must implement:
 
 ### 1. Encoding Module (encoder_decoder/)
 
-- Language: C / Python  
+- Language: C 
 - Functionality:  
    - Converts each password character into 6-bit binary.
    - 100 characters → 600 bits (75 bytes).
@@ -48,7 +45,7 @@ Teams must implement:
 
 ### 2. LED Display Module (led_display/)
 
-- Matrix Used: 2x (8x8 RGB LED) matrices  
+- Matrix Used: 2x (16X16 RGB LED) matrices  
 - Color Encoding Scheme:
 
   | Color | Bits |
@@ -62,6 +59,9 @@ Teams must implement:
    - The 1024-bit encoded stream is chunked into 2-bit values.
    - These are mapped to LED states.
    - Images of 44 patterns generated for full bitstream visualization.
+     
+- Testing:
+   - Tested different passwords on 8x8 RGB matrix 
 
 ### 3. Decoding Module (decoder_opencv/)
 
@@ -85,8 +85,7 @@ Teams must implement:
 
 - Hardware Limitations: Only one 8x8 matrix was available. Full 1024-bit display required splitting into multiple frames.
 - Decoder Stability: Color identification accuracy varied under lighting conditions.
-- Unverified Firmware: ESP32 code is not yet tested due to time constraints.
-- Color Cross-talk: Visual blending made some color states harder to distinguish.
+- Unverified Firmware: ESP32 code is not yet tested.
 
 ## Conclusion
 
