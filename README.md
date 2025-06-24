@@ -113,7 +113,12 @@ ERC_Password_Display/
 │   ├── draft1.py
 │   ├── draft2.py
 │   └── draft3.py
-├── microcontroller (not tested)/
+├── microcontroller/
+│   ├── Wokwi Simulator code/
+│       ├── diagram.json
+│       ├── libraries.txt
+│       ├── sketch.ino
+│       └── wokwi-project.txt
 │   └── initial_microcontroller_code.c
 └── README.md
 ```
