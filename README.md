@@ -76,7 +76,7 @@ Teams must implement:
 ### 4. Microcontroller Logic (microcontroller/)
 
 - Device: ESP32 (planned)
-- Status: Draft code prepared  
+- Status: Draft code prepared and in the process of testing using Wokwi simulator
 - Responsibilities:
    - Control LED patterns sequentially or statically
    - Accept 128-byte encoded stream and display it using RGB patterns
@@ -85,7 +85,7 @@ Teams must implement:
 
 - Hardware Limitations: Only one 8x8 matrix was available. Full 1024-bit display required splitting into multiple frames.
 - Decoder Stability: Color identification accuracy varied under lighting conditions.
-- Unverified Firmware: ESP32 code is not yet tested.
+- Unverified Firmware: ESP32 code is still being tested.
 
 ## Conclusion
 
