@@ -98,21 +98,23 @@ Teams must implement:
 
 ## Repository Structure
 
+```text
 ERC_Password_Display/
-├── encoder_decoder_testcode/        
-│   ├── libcorrect/ 
+├── encoder_decoder_testcode/
+│   ├── libcorrect/
 │   ├── decoder.c
-│   ├── CMakeLists.txt
 │   ├── encoder.c
+│   ├── CMakeLists.txt
 │   └── test_photo.jpg
-├── led_display/            
+├── led_display/
 │   ├── RGB_Matrix_test_using_8x8matrix/ - GRB_8by8_Matrix.ino
-│   └── led_patterns/  - 30 LED matrices photos with different encoded passwords
-├── decoder_opencv/         
-│   ├── draft1.py  
-│   ├── draft2.py  
-│   └── draft3.py  
-├── microcontroller(not tested)/        
-│   └── initial_microcontroller_code.c  
+│   └── led_patterns/ - 30 LED matrices photos with different encoded passwords
+├── decoder_opencv/
+│   ├── draft1.py
+│   ├── draft2.py
+│   └── draft3.py
+├── microcontroller (not tested)/
+│   └── initial_microcontroller_code.c
 └── README.md
+```
 
